@@ -36,7 +36,7 @@
       section {
         padding-top: 4rem;
       }
-      #newsletter {
+      #section-newsletter {
         padding-top: 0;
       }
       body {
@@ -71,31 +71,31 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" id="navScrollspy">
           <li class="nav-item">
-            <a href="#top" class="nav-link">To the top</a>
+            <a href="#section-jumbotron" class="nav-link">To the top</a>
           </li>
           <li class="nav-item">
-            <a href="#description" class="nav-link">Description</a>
+            <a href="#section-description" class="nav-link">Description</a>
           </li>
           <li class="nav-item">
-            <a href="#trailer" class="nav-link">Trailer</a>
+            <a href="#section-trailer" class="nav-link">Trailer</a>
           </li>
           <li class="nav-item">
-            <a href="#showcase" class="nav-link">Showcase</a>
+            <a href="#section-showcase" class="nav-link">Showcase</a>
           </li>
           <li class="nav-item">
-            <a href="#features" class="nav-link">Features</a>
+            <a href="#section-features" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
-            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#section-pricing" class="nav-link">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#section-reviews" class="nav-link">Reviews</a>
           </li>
         </ul>
       </div>
     </nav>
     <section
-      id="top"
+      id="section-jumbotron"
       class="
         jumbotron
         jumbtron-fluid
@@ -126,7 +126,7 @@
       </div>
     </section>
     <div class="container">
-      <section id="description">
+      <section id="section-description">
         <h2 class="display-4 text-center">What is Cameo?</h2>
         <p>
           Cameo is an innovative camera app for both android and IOS that lets
@@ -143,7 +143,7 @@
           this is just the beginning.
         </p>
       </section>
-      <section id="trailer">
+      <section id="section-trailer">
         <h2 class="display-4 text-center">Cameo trailer</h2>
         <p class="text-center">
           Watch our trailer video below to learn how Cameo works
@@ -151,12 +151,12 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe
             class="embend-responsive-item"
-            src=""
+            src="videos/nicki.mp4"
             frameborder="0"
           ></iframe>
         </div>
       </section>
-      <section id="showcase">
+      <section id="section-showcase">
         <h2 class="display-4 text-center">Cameo in action</h2>
         <p class="text-center">Examples of how and where you can use Cameo.</p>
         <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -233,7 +233,7 @@
           </a>
         </div>
       </section>
-      <section id="features">
+      <section id="section-features">
         <h2 class="display-4 text-center">Features</h2>
         <div class="row">
           <div
@@ -321,7 +321,7 @@
           </div>
         </div>
       </section>
-      <section id="pricing">
+      <section id="section-pricing">
         <h2 class="display-4 text-center">Choose your plan</h2>
 
         <div class="row">
@@ -415,7 +415,7 @@
           </div>
         </div>
       </section>
-      <section id="reviews">
+      <section id="section-reviews">
         <h2 class="display-4 text-center">Reviews</h2>
         <div class="row">
           <div class="col-12 col-md-6 col-xl-3">
@@ -499,7 +499,7 @@
         </div>
       </section>
     </div>
-    <section id="newsletter" class="bg-secondary">
+    <section id="section-newsletter" class="bg-secondary">
       <div class="container">
         <form action="" class="py-5 text-white">
           <h2 class="text-center">Sign-up for our newsletter</h2>
@@ -783,8 +783,17 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"
+      integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA="
+      crossorigin="anonymous"
+    ></script>
 
     <script type="text/javascript">
+      $(function () {
+        var scroll = new SmoothScroll('a[href*="#section-"]');
+      });
+
       $(function () {
         $('[data-toogle="tooltip"]').tooltip();
       });

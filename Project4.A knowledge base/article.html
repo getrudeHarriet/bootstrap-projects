@@ -112,7 +112,171 @@
             </div>
           </nav>
         </div>
-        <div class="col-12 col-lg-6 pt-3"></div>
+        <div class="col-12 col-lg-6 pt-3">
+          <article>
+            <h2>Article Heading</h2>
+            <div class="small">
+              Latest update: <time datetime="2021-11-03">Nov 3, 2021</time>
+            </div>
+            <p class="lead">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis tenetur eius, aperiam modi debitis cupiditate enim.
+              Laudantium impedit minima sit quam sunt! Expedita doloribus rerum
+              vero reiciendis beatae incidunt, nam, at facere labore
+              voluptatibus quam est harum ut, laboriosam minima.
+            </p>
+            <p class="alert alert-warning small" role="alert">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem accusantium perspiciatis voluptatem dolores
+              nesciunt! Eaque incidunt ullam natus voluptas doloribus.
+            </p>
+            <h3>Article Sub Heading</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum
+              placeat mollitia iste optio repudiandae ipsa odit fuga,
+              doloremque, voluptas quibusdam facere numquam dolores, a ad
+              similique reprehenderit ullam exercitationem nobis nisi assumenda
+              velit. Obcaecati soluta voluptates magni architecto quae aperiam
+              dolorem, asperiores porro! Mollitia explicabo ex eveniet, sapiente
+              voluptatibus alias.
+            </p>
+            <img src="img/700x500.png" alt="" class="img-fluid" />
+            <h4 class="h5">Article Small Sub Heading</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Architecto nemo fugiat, culpa, atque, quidem tenetur beatae sit
+              neque dolores ipsam laboriosam cupiditate. Porro, explicabo nobis.
+              Non nihil aliquid voluptate eum quia minima facilis, ipsa,
+              recusandae quidem, commodi ex esse rerum error. Doloremque error
+              voluptatibus id ullam dolorum cumque odio magni?
+            </p>
+            <a href="#0">Link to other article</a>
+            <h3>Article Sub Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eum
+              impedit iusto eos cum, mollitia cupiditate atque officiis ullam
+              sit voluptatem, enim nisi! Esse quae, excepturi ipsum et amet
+              quasi vel itaque ut facere, a sunt culpa voluptatum officia
+              deleniti quos eius est impedit autem eum sequi blanditiis odit
+              sint fugiat consequatur! Voluptas, iure tenetur. Esse quisquam
+              nobis ipsam animi voluptate fugiat repudiandae harum cumque,
+              libero delectus! Quibusdam dolores unde quae commodi laboriosam
+              omnis mollitia?
+            </p>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus earum sed quisquam.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus earum sed quisquam.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus earum sed quisquam.
+              </li>
+            </ul>
+            <h3>Article Sub Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
+              neque, facere laboriosam pariatur voluptas adipisci repellendus
+              consectetur non vel veniam, qui est. Quasi doloribus officia
+              voluptates error explicabo quisquam dolores neque inventore id
+              exercitationem, minus illo nemo aperiam ipsum incidunt iusto
+              assumenda laudantium sequi nulla! Cumque quod aperiam alias,
+              debitis iste et tempora reprehenderit error commodi non animi
+              illum suscipit provident ab explicabo dolores aspernatur harum
+              porro vitae maxime! Quis cum sit labore neque nihil!
+            </p>
+            <ol>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt cupiditate hic est.
+                <img src="img/700x500.png" alt="" class="img-fluid" />
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt cupiditate hic est.
+                <img src="img/700x500.png" alt="" class="img-fluid" />
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt cupiditate hic est.
+                <img src="img/700x500.png" alt="" class="img-fluid" />
+              </li>
+            </ol>
+            <h3>Article Sub Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet,
+              nihil tempora? Animi alias, mollitia cum voluptatem vel corrupti.
+              Aliquid iusto enim consequatur non reiciendis numquam cum
+              exercitationem minima sint vel expedita illum debitis atque
+              asperiores corporis sed, autem laborum explicabo eos in a illo
+              officiis nostrum? Officia, sunt! Ab nam voluptate, ducimus enim id
+              suscipit sapiente adipisci corrupti fuga sunt, consequuntur autem
+              ut, amet ratione voluptatum mollitia animi aliquid? Explicabo iste
+              expedita suscipit nisi provident laboriosam labore mollitia minus
+              in.
+            </p>
+            <pre class="pre-scrollable">
+              <code>
+                package com.keytech.didemo.Services;
+                
+                import org.springframework.context.annotation.Primary;
+                import org.springframework.context.annotation.Profile;
+                import org.springframework.stereotype.Service;
+                
+                import com.keytech.didemo.Repository.GreetingRepository;
+                
+                public class PrimaryGreetingService implements GreetingService{
+                  
+                  private GreetingRepository greetingRepository;
+                  
+                  public PrimaryGreetingService(GreetingRepository greetingRepository) {
+                    super();
+                    this.greetingRepository = greetingRepository;
+                  }
+                  
+                  @Override
+                  public String sayGreeting() {
+                    return greetingRepository.getEnglishGreeting();
+                  }
+                  
+                }
+              </code>
+            </pre>
+            <h3>Article Sub Heading</h3>
+            <table class="table table-striped">
+              <thead>
+                <th scope="col">#</th>
+                <th scope="col">First Column</th>
+                <th scope="col">Second Column</th>
+                <th scope="col">Third Column</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">First Row</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Second Row</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">Third Row</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </div>
         <div class="col-12 col-lg-3">
           <aside class="sticky-top">
             <h4 class="h6 pt-3">Technical Support</h4>

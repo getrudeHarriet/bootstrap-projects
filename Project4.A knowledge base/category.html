@@ -81,19 +81,29 @@
           >
             <h4 class="h6">Sub Categories</h4>
             <div class="list-group">
-              <a href="#0" class="list-group-item list-group-item-action"
+              <a
+                href="#section-1"
+                class="list-group-item list-group-item-action"
                 >Category Subheading</a
               >
-              <a href="#0" class="list-group-item list-group-item-action"
+              <a
+                href="#section-2"
+                class="list-group-item list-group-item-action"
                 >Category Subheading</a
               >
-              <a href="#0" class="list-group-item list-group-item-action"
+              <a
+                href="#section-3"
+                class="list-group-item list-group-item-action"
                 >Category Subheading</a
               >
-              <a href="#0" class="list-group-item list-group-item-action"
+              <a
+                href="#section-4"
+                class="list-group-item list-group-item-action"
                 >Category Subheading</a
               >
-              <a href="#0" class="list-group-item list-group-item-action"
+              <a
+                href="#section-5"
+                class="list-group-item list-group-item-action"
                 >Category Subheading</a
               >
             </div>
@@ -102,7 +112,7 @@
         <div class="col-12 col-lg-6 pt-3">
           <main>
             <h2>Category Heading</h2>
-            <h3 class="font-italic">Category Subheading</h3>
+            <h3 class="font-italic" id="section-1">Category Subheading</h3>
             <ul class="list-unstyled">
               <li><a href="article.html">Article Heading</a></li>
               <li><a href="article.html">Article Heading</a></li>
@@ -111,7 +121,7 @@
               <li><a href="article.html">Article Heading</a></li>
             </ul>
             <hr />
-            <h3 class="font-italic">Category Subheading</h3>
+            <h3 class="font-italic" id="section-2">Category Subheading</h3>
             <ul class="list-unstyled">
               <li><a href="article.html">Article Heading</a></li>
               <li><a href="article.html">Article Heading</a></li>
@@ -120,7 +130,7 @@
               <li><a href="article.html">Article Heading</a></li>
             </ul>
             <hr />
-            <h3 class="font-italic">Category Subheading</h3>
+            <h3 class="font-italic" id="section-3">Category Subheading</h3>
             <ul class="list-unstyled">
               <li><a href="article.html">Article Heading</a></li>
               <li><a href="article.html">Article Heading</a></li>
@@ -129,7 +139,7 @@
               <li><a href="article.html">Article Heading</a></li>
             </ul>
             <hr />
-            <h3 class="font-italic">Category Subheading</h3>
+            <h3 class="font-italic" id="section-4">Category Subheading</h3>
             <ul class="list-unstyled">
               <li><a href="article.html">Article Heading</a></li>
               <li><a href="article.html">Article Heading</a></li>
@@ -138,7 +148,7 @@
               <li><a href="article.html">Article Heading</a></li>
             </ul>
             <hr />
-            <h3 class="font-italic">Category Subheading</h3>
+            <h3 class="font-italic" id="section-5">Category Subheading</h3>
             <ul class="list-unstyled">
               <li><a href="article.html">Article Heading</a></li>
               <li><a href="article.html">Article Heading</a></li>
@@ -172,5 +182,15 @@
     <!--JQuery-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var scroll = new SmoothScroll('a[href*="#section-"]');
+      });
+
+      $(function () {
+        $('[data-toogle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
